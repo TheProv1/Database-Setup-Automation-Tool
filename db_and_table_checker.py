@@ -9,3 +9,11 @@ if conobj.is_connected:
 else:
 	print("Password Entered is Incorrect")
 	exit()
+	
+cur = conobj.cursor()
+
+db_name = input("Enter the name of the required database: ")
+db = (db_name,)
+
+
+cur.execute("")
