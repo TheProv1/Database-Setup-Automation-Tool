@@ -44,8 +44,22 @@ def db_searcher():
 	cur.execute(db_switch)
 
 n = int(input("Enter the number of table(s): "))
+t_lst = []
+
+for i in range(n):
+	t_name = input("Enter the name of the table: ")
+	t_lst.append(t_name)
+
+t_tup = tuple(t_lst)
+
+cur.execute("show tables")
+tb_tup = cur.fetchall()
 
 def table_searcher():
 	'''
 	This function searches the database for the table(s) entered by the user.
 	'''
+	if t_tup in tb_tup:
+		print("The table(s) is/are present within the database")
+	else:
+		print("The table(s) is/are missing")
