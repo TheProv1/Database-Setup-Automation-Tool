@@ -10,4 +10,4 @@ python db_and_table_checker.py
 
 ## Author
 
-Aswin Krishna(TheProv1)
+Aswin Krishna (TheProv1)
