@@ -1,11 +1,11 @@
-# Database verifier
+# Database Setup Automation Tool
 
-# Description
+## Description
 
 This script checks if the required database (DB) and the related tables are present within the DB.
 
 
-# To run the code
+## To run the code
 
 ```python
 
